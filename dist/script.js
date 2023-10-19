@@ -25,6 +25,10 @@ function preencherEstatisticas(transacoes) {
     if (totalElement) {
         totalElement.innerText = data.total.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
     }
+    const melhorDiaElement = document.querySelector('#dia span');
+    if (melhorDiaElement) {
+        melhorDiaElement.innerText = data.melhorDia[0];
+    }
 }
 function preencherTabela(transacoes) {
     const tabela = document.querySelector("#transacoes tbody");

@@ -28,6 +28,11 @@ function preencherEstatisticas(transacoes: Transacao[]): void {
     if(totalElement) {
         totalElement.innerText = data.total.toLocaleString("pt-br", {style: "currency", currency: "BRL"})
     }
+
+    const melhorDiaElement = document.querySelector<HTMLElement>('#dia span')
+    if(melhorDiaElement) {
+        melhorDiaElement.innerText = data.melhorDia[0]
+    }
 }
 
 
