@@ -1,4 +1,4 @@
-interface CountList {
+export interface CountList {
     [key: string]: number
 }
 
